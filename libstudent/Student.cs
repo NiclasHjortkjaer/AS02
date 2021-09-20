@@ -2,14 +2,6 @@
 
 namespace libstudent
 {
-    public enum Status
-    {
-        New,
-        Active,
-        Dropout,
-        Graduated
-    }
-
     public class Student
     {
         private int _id;
