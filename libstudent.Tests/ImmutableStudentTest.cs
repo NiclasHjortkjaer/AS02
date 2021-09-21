@@ -32,11 +32,11 @@ namespace libstudent.Tests
         public void TwoRecordsToStringAreEqual()
         {
             // Arrange.
-            ImmutableStudent is1 = new(1234, "Bob", "Smith", new DateTime(2021, 2, 1), DateTime.MaxValue, new DateTime(2024, 2, 1));
-            string is1ToString = "ImmutableStudent { id = 1234, givenName = Bob, surName = Smith, startDate = 2/1/2021 12:00:00 AM, endDate = 12/31/9999 11:59:59 PM, graduationDate = 2/1/2024 12:00:00 AM }";
+            ImmutableStudent actual = new(1234, "Bob", "Smith", new DateTime(2021, 2, 1), DateTime.MaxValue, new DateTime(2024, 2, 1));
+            string expected = "{ id = 1234, givenName = Bob, surName = Smith, startDate = 02/01/2021 12:00 AM, endDate = 12/31/9999 11:59 PM, graduationDate = 02/01/2024 12:00 AM }";
 
             // Assert.
-            Assert.Equal(is1.ToString(), is1ToString);
+            Assert.Equal(expected, actual.ToString());
         }
     }
 }

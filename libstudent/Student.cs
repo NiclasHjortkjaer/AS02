@@ -81,9 +81,9 @@ namespace libstudent
                 _givenName,
                 _surName,
                 _status,
-                _startDate,
-                _endDate,
-                _graduationDate
+                _startDate.ToString("MM/dd/yyyy hh:mm tt"),
+                _endDate.ToString("MM/dd/yyyy hh:mm tt"),
+                _graduationDate.ToString("MM/dd/yyyy hh:mm tt")
             );
         }
     }

@@ -72,8 +72,8 @@ namespace libstudent.Tests
             var actual = student.ToString();
             var expected = String.Format(
                 "Id: 1234\nName: Bob Smith\nStatus: Graduated\nStartdate: {0}\nEnddate: {1}\nGraduationdate: {1}",
-                DateTime.Now.AddYears(-1).ToString(),
-                DateTime.Now.AddMonths(-6).ToString()
+                DateTime.Now.AddYears(-1).ToString("MM/dd/yyyy hh:mm tt"),
+                DateTime.Now.AddMonths(-6).ToString("MM/dd/yyyy hh:mm tt")
             );
 
             // Asset.
